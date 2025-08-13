@@ -1,0 +1,419 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>5 Things She Thinks But Won't Say - Female Psychology Guide</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Arial', sans-serif;
+            background: linear-gradient(135deg, #1a1a1a 0%, #2d2d2d 100%);
+            color: #ffffff;
+            line-height: 1.6;
+            overflow-x: hidden;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+
+        /* Header */
+        .header {
+            padding: 60px 0;
+            text-align: center;
+            background: radial-gradient(circle at center, rgba(220, 38, 38, 0.1) 0%, transparent 70%);
+        }
+
+        .hook {
+            font-size: 1.5rem;
+            color: #dc2626;
+            margin-bottom: 20px;
+            font-weight: 600;
+            letter-spacing: 0.5px;
+        }
+
+        .main-title {
+            font-size: 4rem;
+            font-weight: 900;
+            background: linear-gradient(135deg, #ffffff 0%, #f5f5f5 50%, #dc2626 100%);
+            background-clip: text;
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            margin-bottom: 30px;
+            line-height: 1.1;
+        }
+
+        .subtitle {
+            font-size: 1.3rem;
+            color: #e5e5e5;
+            margin-bottom: 40px;
+            max-width: 600px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        /* Content Section */
+        .content-section {
+            padding: 80px 0;
+            background: rgba(255, 255, 255, 0.02);
+            backdrop-filter: blur(10px);
+            border-top: 1px solid rgba(255, 255, 255, 0.1);
+            border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+        }
+
+        .insights-grid {
+            display: grid;
+            gap: 40px;
+            max-width: 900px;
+            margin: 0 auto;
+        }
+
+        .insight-card {
+            background: linear-gradient(135deg, rgba(40, 40, 40, 0.8) 0%, rgba(60, 60, 60, 0.6) 100%);
+            padding: 40px;
+            border-radius: 20px;
+            border: 1px solid rgba(255, 255, 255, 0.1);
+            position: relative;
+            transition: all 0.4s ease;
+            backdrop-filter: blur(20px);
+        }
+
+        .insight-card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 20px 40px rgba(220, 38, 38, 0.2);
+            border-color: rgba(220, 38, 38, 0.3);
+        }
+
+        .insight-number {
+            position: absolute;
+            top: -15px;
+            left: 40px;
+            background: linear-gradient(135deg, #dc2626 0%, #b91c1c 100%);
+            color: white;
+            width: 50px;
+            height: 50px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-weight: 900;
+            font-size: 1.5rem;
+            box-shadow: 0 10px 20px rgba(220, 38, 38, 0.3);
+        }
+
+        .insight-title {
+            font-size: 1.8rem;
+            font-weight: 700;
+            color: #ffffff;
+            margin-bottom: 15px;
+            padding-top: 20px;
+        }
+
+        .insight-description {
+            font-size: 1.1rem;
+            color: #d1d5db;
+            line-height: 1.7;
+        }
+
+        /* Closer Section */
+        .closer-section {
+            padding: 80px 0;
+            text-align: center;
+        }
+
+        .closer-text {
+            font-size: 2rem;
+            font-weight: 700;
+            color: #ffffff;
+            margin-bottom: 50px;
+            max-width: 700px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        .emphasis {
+            color: #dc2626;
+            font-style: italic;
+        }
+
+        /* CTA Section */
+        .cta-section {
+            padding: 100px 0;
+            background: linear-gradient(135deg, #dc2626 0%, #b91c1c 100%);
+            text-align: center;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .cta-section::before {
+            content: '';
+            position: absolute;
+            top: -50%;
+            left: -50%;
+            width: 200%;
+            height: 200%;
+            background: radial-gradient(circle, rgba(255,255,255,0.1) 0%, transparent 70%);
+            animation: pulse 6s ease-in-out infinite;
+        }
+
+        @keyframes pulse {
+            0%, 100% { opacity: 0.3; transform: scale(1); }
+            50% { opacity: 0.6; transform: scale(1.1); }
+        }
+
+        .cta-content {
+            position: relative;
+            z-index: 2;
+        }
+
+        .cta-title {
+            font-size: 3rem;
+            font-weight: 900;
+            color: #ffffff;
+            margin-bottom: 30px;
+            text-shadow: 2px 2px 4px rgba(0,0,0,0.3);
+        }
+
+        .cta-subtitle {
+            font-size: 1.4rem;
+            color: rgba(255, 255, 255, 0.9);
+            margin-bottom: 50px;
+            max-width: 600px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        .cta-button {
+            display: inline-block;
+            background: linear-gradient(135deg, #ffffff 0%, #f5f5f5 100%);
+            color: #1a1a1a;
+            padding: 25px 60px;
+            font-size: 1.4rem;
+            font-weight: 800;
+            text-decoration: none;
+            border-radius: 50px;
+            transition: all 0.3s ease;
+            box-shadow: 0 15px 30px rgba(0, 0, 0, 0.3);
+            text-transform: uppercase;
+            letter-spacing: 2px;
+            border: 3px solid transparent;
+        }
+
+        .cta-button:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 25px 50px rgba(0, 0, 0, 0.4);
+            background: #1a1a1a;
+            color: #ffffff;
+            border-color: #ffffff;
+        }
+
+        .price-info {
+            margin-top: 40px;
+            font-size: 1.2rem;
+            color: rgba(255, 255, 255, 0.8);
+        }
+
+        .original-price {
+            text-decoration: line-through;
+            color: rgba(255, 255, 255, 0.6);
+        }
+
+        .current-price {
+            color: #ffffff;
+            font-weight: 800;
+            font-size: 1.5rem;
+        }
+
+        /* Responsive Design */
+        @media (max-width: 768px) {
+            .main-title {
+                font-size: 2.5rem;
+            }
+            
+            .insight-card {
+                padding: 30px 25px;
+            }
+            
+            .insight-title {
+                font-size: 1.5rem;
+            }
+            
+            .cta-title {
+                font-size: 2rem;
+            }
+            
+            .cta-button {
+                padding: 20px 40px;
+                font-size: 1.2rem;
+            }
+        }
+
+        /* Floating Elements */
+        .floating-element {
+            position: absolute;
+            opacity: 0.1;
+            pointer-events: none;
+            animation: float 8s ease-in-out infinite;
+        }
+
+        @keyframes float {
+            0%, 100% { transform: translateY(0px) rotate(0deg); }
+            50% { transform: translateY(-20px) rotate(180deg); }
+        }
+
+        .floating-1 {
+            top: 20%;
+            left: 10%;
+            width: 50px;
+            height: 50px;
+            background: #dc2626;
+            border-radius: 50%;
+            animation-delay: 0s;
+        }
+
+        .floating-2 {
+            top: 60%;
+            right: 15%;
+            width: 30px;
+            height: 30px;
+            background: #ffffff;
+            border-radius: 50%;
+            animation-delay: 2s;
+        }
+
+        .floating-3 {
+            bottom: 30%;
+            left: 20%;
+            width: 40px;
+            height: 40px;
+            background: #dc2626;
+            border-radius: 50%;
+            animation-delay: 4s;
+        }
+    </style>
+</head>
+<body>
+    <!-- Floating Elements -->
+    <div class="floating-element floating-1"></div>
+    <div class="floating-element floating-2"></div>
+    <div class="floating-element floating-3"></div>
+
+    <!-- Header -->
+    <header class="header">
+        <div class="container">
+            <div class="hook">"She's been dropping hints. You just haven't been listening."</div>
+            <h1 class="main-title">5 Things She Thinks<br>(But Won't Say)</h1>
+            <p class="subtitle">Discover the hidden psychology behind female attraction and what women really want from men</p>
+        </div>
+    </header>
+
+    <!-- Content Section -->
+    <section class="content-section">
+        <div class="container">
+            <div class="insights-grid">
+                <div class="insight-card">
+                    <div class="insight-number">1</div>
+                    <h3 class="insight-title">She craves leadership, not indecision</h3>
+                    <p class="insight-description">She wants you to choose instead of asking "What do you want?" each time. Decision fatigue is real, and she's looking for a man who can take charge and make confident choices.</p>
+                </div>
+
+                <div class="insight-card">
+                    <div class="insight-number">2</div>
+                    <h3 class="insight-title">Your mission > your attention</h3>
+                    <p class="insight-description">She's attracted to your drive, even when it takes you away from her. A man with purpose and ambition is infinitely more attractive than one who's always available.</p>
+                </div>
+
+                <div class="insight-card">
+                    <div class="insight-number">3</div>
+                    <h3 class="insight-title">She wants your emotions, not your emotional baggage</h3>
+                    <p class="insight-description">Share your feelings but don't make her your therapist. There's a difference between emotional vulnerability and emotional dumping.</p>
+                </div>
+
+                <div class="insight-card">
+                    <div class="insight-number">4</div>
+                    <h3 class="insight-title">Chivalry isn't dead. It's HOT</h3>
+                    <p class="insight-description">Open doors, walk on the street side, hold her bags. These small gestures communicate respect, care, and traditional masculine energy that women find incredibly attractive.</p>
+                </div>
+
+                <div class="insight-card">
+                    <div class="insight-number">5</div>
+                    <h3 class="insight-title">She cares how other men see you</h3>
+                    <p class="insight-description">Your social proof has an impact on her respect for you. How other men treat you directly influences how she perceives your value and status.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Closer Section -->
+    <section class="closer-section">
+        <div class="container">
+            <p class="closer-text">These aren't tricks. This is <span class="emphasis">how female attraction works.</span></p>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="cta-section">
+        <div class="container">
+            <div class="cta-content">
+                <h2 class="cta-title">Get The Complete Guide</h2>
+                <p class="cta-subtitle">Unlock the complete female psychology playbook and transform how women see you</p>
+                
+                <div class="price-info">
+                    <span class="original-price">$97</span> 
+                    <span class="current-price">$19</span>
+                </div>
+                
+                <a href="https://buy.stripe.com/fZubIU1DM2eC5Y66AS6Vq07" class="cta-button" target="_blank">Get Instant Access</a>
+                
+                <p style="margin-top: 30px; font-size: 0.9rem; opacity: 0.8;">
+                    ✓ Instant Digital Download<br>
+                    ✓ 30-Day Money Back Guarantee<br>
+                    ✓ Complete Female Psychology System
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <script>
+        // Add smooth scrolling and entrance animations
+        document.addEventListener('DOMContentLoaded', function() {
+            // Add entrance animations
+            const cards = document.querySelectorAll('.insight-card');
+            const observer = new IntersectionObserver((entries) => {
+                entries.forEach(entry => {
+                    if (entry.isIntersecting) {
+                        entry.target.style.opacity = '1';
+                        entry.target.style.transform = 'translateY(0)';
+                    }
+                });
+            }, { threshold: 0.1 });
+
+            cards.forEach(card => {
+                card.style.opacity = '0';
+                card.style.transform = 'translateY(50px)';
+                card.style.transition = 'all 0.6s ease';
+                observer.observe(card);
+            });
+        });
+
+        // Add some interactive elements
+        document.querySelectorAll('.insight-card').forEach(card => {
+            card.addEventListener('mouseenter', function() {
+                this.style.transform = 'translateY(-10px) scale(1.02)';
+            });
+            
+            card.addEventListener('mouseleave', function() {
+                this.style.transform = 'translateY(0) scale(1)';
+            });
+        });
+    </script>
+</body>
+</html>
